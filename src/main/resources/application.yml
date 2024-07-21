@@ -13,3 +13,14 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MariaDBDialect
 
+jwt:
+  secret-key: eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTcyMTU3MTYyOCwiaWF0IjoxNzIxNTcxNjI4fQ.ka26aQqDpdhWaEj8f2cIoY8Xb1d3PVNTEepaG7NHLP4
+  validity-in-milliseconds: 60000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter: DEBUG
+    org.springframework.security.web.access.ExceptionTranslationFilter: DEBUG
+    org.springframework.security.web.FilterChainProxy: DEBUG
+
