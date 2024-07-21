@@ -7,9 +7,11 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Builder
 @Entity
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Member {
